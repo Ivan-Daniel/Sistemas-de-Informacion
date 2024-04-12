@@ -1,0 +1,25 @@
+.imagen {
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+    float: left;
+    margin-left: 15px; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+    justify-content: right;
+}
+
+.contenido-header {
+    display: flex;
+    align-items: center;
+}
+
+.contenido-header a {
+    text-decoration: none;
+    color: blue; /* Change this to the color you prefer */
+}
