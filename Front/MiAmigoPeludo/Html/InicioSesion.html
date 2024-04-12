@@ -1,0 +1,139 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fondo de la página */
+        }
+        .modal {
+            display: none; /* Ocultar el modal por defecto */
+            position: fixed; /* Mantenerlo fijo en la pantalla */
+            z-index: 1; /* Situarlo sobre otros elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Ancho completo */
+            height: 100%; /* Alto completo */
+            overflow: auto; /* Habilitar el desplazamiento si es necesario */
+            background-color: rgba(0, 0, 0, 0.4); /* Color de fondo con opacidad */
+        }
+        .modal-content {
+            background-color: #fff; /* Fondo blanco para el contenido */
+            margin: 15% auto; /* Margen para centrar */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%; /* Ancho del contenido */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #008CBA; /* Color azul para el encabezado */
+            color: white;
+            text-align: center;
+        }
+        .modal-body {padding: 2px 16px;}
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #008CBA; /* Color azul para el pie de página */
+            color: white;
+            text-align: center;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #008CBA; /* Botones azules */
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+<!-- Botón para abrir el modal -->
+<button id="myBtn">Iniciar Sesión</button>
+
+<!-- El Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Contenido del modal -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+    </div>
+    <div class="modal-body">
+      <img src="C:\Users\user\Downloads\MiAmigoPeludo\Image\logo.png" alt="Logo" style="width: 100%; height: auto;"> <!-- Logo de la página -->
+      <h3 style="text-align: center;">¡Bienvenid@s!</h3> <!-- Mensaje de bienvenida -->
+      <label for="uname"><b>Usuario</b></label>
+      <input type="text" placeholder="Ingresa tu usuario" name="uname" required>
+
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+
+      <button type="submit">Iniciar Sesión</button>
+      <button onclick="location.href='C:/Users/user/Downloads/MiAmigoPeludo/Html/crearperfil.html'">Crear Cuenta</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Obtener el modal
+var modal = document.getElementById("myModal");
+
+// Obtener el botón que abre el modal
+var btn = document.getElementById("myBtn");
+
+// Obtener el elemento <span> que cierra el modal
+var span = document.getElementsByClassName("close")[0];
+
+// Cuando el usuario haga clic en el botón, abrir el modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Cuando el usuario haga clic en <span> (x), cerrar el modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic en cualquier lugar fuera del modal, cerrarlo
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
