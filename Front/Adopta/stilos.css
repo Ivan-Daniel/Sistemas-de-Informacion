@@ -1,0 +1,161 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header{
+    background-color: #AFF;
+    color: white;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+h3 {
+    color: #333;
+    margin: 0 0 10px;
+}
+
+/* Estilos para la lista de eventos */
+
+.event_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 0;
+}
+
+.event {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+.event_imageContainer {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.event_image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event_imageContainer:hover .event_image {
+    transform: scale(1.1);
+}
+
+.event_detail {
+    padding: 15px;
+}
+
+.event_title {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.event_description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.event_url {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event_url:hover {
+    background-color: #0056b3;
+}
+
+/* Diseño responsivo */
+
+@media (max-width: 768px) {
+    .event {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .event {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.social_link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+  
+.social_link.X{
+    background-color: #1c1c1c;
+}
+  
+.social_link.facebook{
+    background-color: #1c1c1c;
+}
+  
+.social_link.instagram{
+    background-color: #1c1c1c;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.footer{
+    background-color: #1c1c1c;
+    color: white;
+    height: 150px;
+    display: auto;
+    align-items: center;
+    justify-content: space-between;
+}
