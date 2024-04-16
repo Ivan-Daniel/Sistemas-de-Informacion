@@ -1,0 +1,35 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    background-color: rgba(42, 144, 148, 0.692); /* Fondo negro para el menú */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+}
+.main {
+    margin-top: 50px; /* Ajusta esto al tamaño de tu menú */
+}
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Aumenta la separación entre los elementos del menú */
+}
+.menu-logo {
+    margin-right: auto; /* Alinea el logo a la izquierda */
+}
+.menu-logo img {
+    height: 70px; /* Ajusta el tamaño del logo */
+}
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+.menu-icon {
+    height: 30px; /* Ajusta el tamaño de los iconos del menú */
+}
