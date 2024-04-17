@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Usuario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <script>
+        function showPopup() {
+            document.getElementById('cart-popup').style.display = 'block';
+        }
+        function hidePopup() {
+            document.getElementById('cart-popup').style.display = 'none';
+        }
+        function redirectToInicio() {
+            window.location.href = 'index.html';
+        }
+        function redirectToAdopta() {
+            window.location.href = 'adopta.html';
+        }
+        function redirectToProductos() {
+            window.location.href = 'Compras.html'; 
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="menu-logo">
+              <img src="Imagenes/logo.png" alt="Logo Amigo Peludo">
+              <img src="Imagenes/tituloNegro.png" alt="Titulo">
+          </div>
+          <div class="menu-items">
+                <button class="menu-button" onclick="redirectToInicio()">Inicio</button>            
+                <button class="menu-button" onclick="redirectToAdopta()">Adopta</button>
+                <button class="menu-button" onclick="redirectToProductos()">Productos</button>
+                <a href="carrito.php"><img class="menu-icon" src="Imagenes/Carrito.png" alt="Carrito" onclick="showPopup()"></a>
+                <a href="InicioSesion.html"><img class="menu-icon" src="Imagenes/usuario.png" alt="Usuario"></a>
+          </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form action="Php/regis.php" method="post">
+            <div class="title-container">
+                <img src="Imagenes/tarjeta-de-identificacion.png" alt="">
+                <h1>Crear cuenta</h1>
+            </div>
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="id">Identificación:</label>
+            <input type="text" id="id" name="id" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="Mujer">Mujer</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="user">Usuario:</label>
+            <input type="text" id="user" name="user" required>
+
+            <label for="psw">Contraseña:</label>
+            <input type="password" id="psw" name="psw" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <button type="submit">Crear Usuario</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Imagenes/logoFnegro.png" alt="MiAmigoPeludo">
+                    </a>
+                    
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugiat libero vitae mollitia ius</p>
+                <p>¡Agradecemos las donaciones!</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="redSocial">
+                    <img src="Imagenes/facebook.png" alt="Facebook">
+                    <img src="Imagenes/instagram.png" alt="Instagram">
+                    <img src="Imagenes/x.png" alt="X">                    
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2024 <b>Amigo Peludo</b> Todos los derechos reservados.</small>
+        </div>
+    </footer>
+    
+    <script src="javaScript/verificacion.js"></script>
+</body>
+</html>

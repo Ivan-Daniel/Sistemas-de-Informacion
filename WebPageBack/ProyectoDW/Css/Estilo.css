@@ -1,0 +1,48 @@
+.carrusel{
+    margin-top: 86px;
+    background-color: white;
+}
+.carrusel div {
+    z-index: 0;
+}
+.carrusel-image {
+    height: 400px; /* Establece la altura deseada */
+    object-fit: cover; /* Para ajustar la imagen sin distorsionarla */
+}
+.produc h1 {
+    text-align: center;
+}
+.produc div {
+    text-decoration: none;
+    color: black;
+}
+.produc {
+    margin: 18px;
+}
+.agg {
+    padding: 8px 12px;
+    background-color: #33CCFF;
+    color: white;
+}
+.agg:hover {
+    background-color: #0056b3;
+}
+/* producto */
+.main-content {
+    padding-top: 50px;
+}
+/* imagen del producto */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos específicos para la página del carrito */
+.card {
+    margin-bottom: 20px;
+}
+.card-title {
+    margin-bottom: 10px;
+}
+.btn-danger {
+    margin-top: 10px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta</title>
+    <link rel="stylesheet" href="Css/stilos.css">
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <script>
+        function showPopup() {
+            document.getElementById('cart-popup').style.display = 'block';
+        }
+        function hidePopup() {
+            document.getElementById('cart-popup').style.display = 'none';
+        }
+        function redirectToInicio() {
+            window.location.href = 'index.html';
+        }
+        function redirectToAdopta() {
+            window.location.href = 'adopta.html';
+        }
+        function redirectToProductos() {
+            window.location.href = 'Compras.html'; 
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="menu-logo">
+              <img src="Imagenes/logo.png" alt="Logo Amigo Peludo">
+              <img src="Imagenes/tituloNegro.png" alt="Titulo">
+          </div>
+          <div class="menu-items">
+                <button class="menu-button" onclick="redirectToInicio()">Inicio</button>            
+                <button class="menu-button" onclick="redirectToAdopta()">Adopta</button>
+                <button class="menu-button" onclick="redirectToProductos()">Productos</button>
+                <a href="carrito.php"><img class="menu-icon" src="Imagenes/Carrito.png" alt="Carrito" onclick="showPopup()"></a>
+                <a href="C:\Users\User\Desktop/ProyectoDW\MiAmigoPeludo\Html\InicioSesion.html"><img class="menu-icon" src="Imagenes/usuario.png" alt="Usuario"></a>
+          </div>
+        </nav>
+    </header>
+
+    
+    <section class="information_Animal">
+        <h1>Adopta seguro con nosotros</h1>
+
+        <figure>
+            <img src="Imagenes/Zuri.jpg" alt="">
+        </figure>
+        <p>Lorem ipsum dolor sit amet, consectetur <br>
+            adipiscing elit, sed do eiusmod tempor incididunt <br>
+            ut labore et dolore magna aliqua. Ut enim ad <br>
+            minim veniam, quis nostrud exercitation ullamco <br>
+            laboris nisi ut aliquip ex ea commodo consequat. <br>
+        </p>
+    </section>
+
+    <footer>
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Imagenes/logoFnegro.png" alt="MiAmigoPeludo">
+                    </a>
+                    
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugiat libero vitae mollitia ius</p>
+                <p>¡Agradecemos las donaciones!</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="redSocial">
+                    <img src="Imagenes/facebook.png" alt="Facebook">
+                    <img src="Imagenes/instagram.png" alt="Instagram">
+                    <img src="Imagenes/x.png" alt="X">                    
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2024 <b>Amigo Peludo</b> Todos los derechos reservados.</small>
+        </div>
+    ,</footer>
+</body>
+</html>

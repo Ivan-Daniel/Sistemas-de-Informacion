@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Peludo - Adopta</title>
+    <link rel="stylesheet" href="Css/stilos.css">
+    <link rel="stylesheet" href="Css/Style.css">
+    
+    <script>
+        function showPopup() {
+            document.getElementById('cart-popup').style.display = 'block';
+        }
+        function hidePopup() {
+            document.getElementById('cart-popup').style.display = 'none';
+        }
+        function redirectToInicio() {
+            window.location.href = 'index.html';
+        }
+        function redirectToAdopta() {
+            window.location.href = 'adopta.html';
+        }
+        function redirectToProductos() {
+            window.location.href = 'Compras.html'; 
+        }
+    </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="menu-logo">
+          <img src="Imagenes/logo.png" alt="Logo Amigo Peludo">
+          <img src="Imagenes/tituloNegro.png" alt="Titulo">
+      </div>
+      <div class="menu-items">
+          <button class="menu-button" onclick="redirectToInicio()">Inicio</button>            
+          <button class="menu-button" onclick="redirectToAdopta()">Adopta</button>
+          <button class="menu-button" onclick="redirectToProductos()">Productos</button>
+          <a href="carrito.php"><img class="menu-icon" src="Imagenes/Carrito.png" alt="Carrito" onclick="showPopup()"></a>
+          <a href="InicioSesion.html"><img class="menu-icon" src="Imagenes/usuario.png" alt="Usuario"></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="event_list" id="plataforma">
+    <article class="event">
+      <figure class="event_imageContainer">
+        <img class="event_image" src="Imagenes/1.jpg" width="480" height="300" alt="">
+      </figure>
+      <div class="event_detail">
+        <h3 class="event_title">Amigo 1</h3>
+        <p class="event_description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a class="event_url" href="adopta2.html">Más Información</a>
+      </div>
+    </article>
+    <article class="event">
+      <figure class="event_imageContainer">
+        <img class="event_image" src="Imagenes/2.jpg" width="480" height="300" alt="">
+      </figure>
+      <div class="event_detail">
+        <h3 class="event_title">Amigo 2</h3>
+        <p class="event_description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a class="event_url" href="adopta2.html">Más Información</a>
+      </div>
+    </article>
+    <article class="event">
+      <figure class="event_imageContainer">
+        <img class="event_image" src="Imagenes/3.jpg" width="480" height="300" alt="">
+      </figure>
+      <div class="event_detail">
+        <h3 class="event_title">Amigo 3</h3>
+        <p class="event_description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a class="event_url" href="adopta2.html" target="">Más Información</a>
+      </div>
+    </article>
+    <article class="event">
+      <figure class="event_imageContainer">
+        <img class="event_image" src="Imagenes/4.jpeg" width="480" height="300" alt="">
+      </figure>
+      <div class="event_detail">
+        <h3 class="event_title">Amigo 4</h3>
+        <p class="event_description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <center>
+          <a class="event_url" href="adopta2.html" target="">Más Información</a>
+        </center>
+      </div>
+    </article>
+    <article class="event">
+      <figure class="event_imageContainer">
+        <img class="event_image" src="Imagenes/perro1.jpg" width="480" height="300" alt="">
+      </figure>
+      <div class="event_detail">
+        <h3 class="event_title">Amigo 5</h3>
+        <p class="event_description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a class="event_url" href="adopta2.html">Más Información</a>
+      </div>
+    </article>
+    <article class="event">
+      <figure class="event_imageContainer">
+        <img class="event_image" src="Imagenes/Zuri.jpg" width="480" height="300" alt="">
+      </figure>
+      <div class="event_detail">
+        <h3 class="event_title">Amigo 6</h3>
+        <p class="event_description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a class="event_url" href="adopta2.html">Más Información</a>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    <div class="grupo1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="Imagenes/logoFnegro.png" alt="MiAmigoPeludo">
+                </a>
+                
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugiat libero vitae mollitia ius</p>
+            <p>¡Agradecemos las donaciones!</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="redSocial">
+                <img src="Imagenes/facebook.png" alt="Facebook">
+                <img src="Imagenes/instagram.png" alt="Instagram">
+                <img src="Imagenes/x.png" alt="X">                    
+            </div>
+        </div>
+    </div>
+    <div class="grupo2">
+        <small>&copy; 2024 <b>Amigo Peludo</b> Todos los derechos reservados.</small>
+    </div>
+  </footer>
+</body>
+</html>

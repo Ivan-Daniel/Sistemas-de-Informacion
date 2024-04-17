@@ -1,0 +1,137 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Style.css">
+
+  <script>
+    function showPopup() {
+      document.getElementById('cart-popup').style.display = 'block';
+    }
+    function hidePopup() {
+      document.getElementById('cart-popup').style.display = 'none';
+    }
+    function redirectToInicio() {
+      window.location.href = 'index.html';
+    }
+    function redirectToAdopta() {
+      window.location.href = 'adopta.html';
+    }
+    function redirectToProductos() {
+      window.location.href = 'Compras.html'; 
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+      <nav>
+        <div class="menu-logo">
+            <img src="Imagenes/logo.png" alt="Logo Amigo Peludo">
+            <img src="Imagenes/tituloNegro.png" alt="Titulo">
+        </div>
+        <div class="menu-items">
+            <button class="menu-button" onclick="redirectToInicio()">Inicio</button>            
+            <button class="menu-button" onclick="redirectToAdopta()">Adopta</button>
+            <button class="menu-button" onclick="redirectToProductos()">Productos</button>
+            <a href="carrito.php"><img class="menu-icon" src="Imagenes/Carrito.png" alt="Carrito" onclick="showPopup()"></a>
+            <a href="InicioSesion.html"><img class="menu-icon" src="Imagenes/usuario.png" alt="Usuario"></a>
+        </div>
+      </nav>
+  </header>
+
+  <div style="margin-top: 76px;">
+    <!-- Botón para abrir el modal -->
+    <button id="myBtn">Iniciar Sesión</button>    
+  </div>
+
+
+  <!-- El Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+      <div class="modal-header">
+          <span class="close">×</span>
+      </div>
+      <div class="modal-body">
+        <img src="Imagenes/logo2.png" alt="Logo" style="width: 100%; height: auto;"> <!-- Logo de la página -->
+        <h3 style="text-align: center;">¡Bienvenid@s!</h3> <!-- Mensaje de bienvenida -->
+        <form id="loginForm" action="Php/login.php" method="POST">
+          
+          <label for="username"><b>Usuario</b></label>
+          <input type="text" placeholder="Ingresa tu usuario" id="username" name="username" required>
+
+          <label for="password"><b>Contraseña</b></label>
+          <input type="password" placeholder="Ingresa tu contraseña" id="password" name="password" required>
+
+          <button onclick="location.href='Php/login.php'">Iniciar Sesión</button>
+        </form>
+        <button onclick="location.href='crearperfil.html'">Crear Cuenta</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="javaScript/verificacion.js"></script>
+  <script>
+    // Obtener el modal
+    var modal = document.getElementById("myModal");
+
+    // Obtener el botón que abre el modal
+    var btn = document.getElementById("myBtn");
+
+    // Obtener el elemento <span> que cierra el modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Cuando el usuario haga clic en el botón, abrir el modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // Cuando el usuario haga clic en <span> (x), cerrar el modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Cuando el usuario haga clic en cualquier lugar fuera del modal, cerrarlo
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+  <footer>
+    <div class="grupo1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="Imagenes/logoFnegro.png" alt="MiAmigoPeludo">
+                </a>
+                
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugiat libero vitae mollitia ius</p>
+            <p>¡Agradecemos las donaciones!</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="redSocial">
+                <img src="Imagenes/facebook.png" alt="Facebook">
+                <img src="Imagenes/instagram.png" alt="Instagram">
+                <img src="Imagenes/x.png" alt="X">                    
+            </div>
+        </div>
+    </div>
+    <div class="grupo2">
+        <small>&copy; 2024 <b>Amigo Peludo</b> Todos los derechos reservados.</small>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Peludo</title>
+    
+    <script>
+        function showPopup() {
+            document.getElementById('cart-popup').style.display = 'block';
+        }
+        function hidePopup() {
+            document.getElementById('cart-popup').style.display = 'none';
+        }
+        function animateButton(button) {
+            /* Aquí puedes añadir el código para animar el botón */
+        }
+        function redirectToInicio() {
+            window.location.href = 'index.html';
+        }
+        function redirectToAdopta() {
+            window.location.href = 'adopta.html';
+        }
+        function redirectToProductos() {
+            window.location.href = 'Compras.html'; 
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav style="background-color: rgba(0, 0, 0, 0.84);">
+            <div class="menu-logo">
+                <img src="Imagenes/logo.png" alt="Logo Amigo Peludo">
+                <img src="Imagenes/tituloBlanco.png" alt="Titulo">
+            </div>
+            <div class="menu-items">
+                <button class="menu-button" style="color: white;" onclick="redirectToInicio()">Inicio</button>
+                <button class="menu-button" style="color: white;" onclick="redirectToAdopta()">Adopta</button>
+                <button class="menu-button" style="color: white;" onclick="redirectToProductos()">Productos</button>
+                <a href="carrito.php"><img class="menu-icon" src="Imagenes/Carrito.png" alt="Carrito" onclick="showPopup()"></a>
+                <a href="InicioSesion.html"><img class="menu-icon" src="Imagenes/usuario.png" alt="Usuario"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <figure class="imagen_inicial">
+                <figcaption>
+                    <h1>¡Encuentra a tu nuevo amigo aquí!</h1><br>
+                    <br>
+                    <p>Descripción de la fundación</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <section>
+            <h2>Información de la Fundación</h2>
+            <p>Misión de la fundación</p>
+            <p>Visión de la fundación</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Imagenes/logoFnegro.png" alt="MiAmigoPeludo">
+                    </a>
+                    
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugiat libero vitae mollitia ius</p>
+                <p>¡Agradecemos las donaciones!</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="redSocial">
+                    <img src="Imagenes/facebook.png" alt="Facebook">
+                    <img src="Imagenes/instagram.png" alt="Instagram">
+                    <img src="Imagenes/x.png" alt="X">                    
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2024 <b>Amigo Peludo</b> Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>
